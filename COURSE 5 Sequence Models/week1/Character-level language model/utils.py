@@ -10,7 +10,7 @@ def smooth(loss, cur_loss):
 def print_sample(sample_ix, ix_to_char):
     txt = ''.join(ix_to_char[ix] for ix in sample_ix)
     txt = txt[0].upper() + txt[1:]  # capitalize first character 
-    print ('%s' % (txt, ), end='')
+    # print ('%s' % (txt, ), end='')
 
 def get_initial_loss(vocab_size, seq_length):
     return -np.log(1.0/vocab_size)*seq_length
